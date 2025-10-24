@@ -11,15 +11,15 @@
     
     <a-scene embedded arjs>
 
-<a-marker type="pattern" url="patterns/marker-A.patt">
-    <a-box 
-        color="tomato" 
-        scale="0.5 0.5 0.5"
-        position="0 0.5 0"
-        rotation="-90 0 0">
-    </a-box>
-</a-marker>
-        
+        <a-marker type="pattern" url="patterns/marker-A.patt">
+            <a-image
+                src="images/correct.png"
+                width="1.5"
+                position="0 0.5 0"
+                rotation="-90 0 0">
+            </a-image>
+        </a-marker>
+
         <a-marker type="pattern" url="patterns/marker-B.patt">
             <a-image
                 src="images/incorrect-B.png"
@@ -41,5 +41,4 @@
         <a-entity camera></a-entity>
     </a-scene>
 </body>
-
 </html>
